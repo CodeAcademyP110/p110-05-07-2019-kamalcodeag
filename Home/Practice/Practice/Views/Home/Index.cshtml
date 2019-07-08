@@ -1,0 +1,45 @@
+﻿@model IEnumerable<OurUser>
+
+
+@{
+    ViewData["Title"] = "Index";
+
+
+    @*Second case with ViewBag*@
+    //IEnumerable<OurUser> users = ViewBag.Type as IEnumerable<OurUser>;
+}
+
+<table style="width: 200px; padding: 10px; border: 1px solid black">
+            <tr>
+                <th>
+                    Name
+                </th>
+                <th>
+                    Surname
+                </th>
+            </tr>
+            @foreach (var user in Model)
+            {
+            <tr>
+                <td>
+                    @user.Name
+                </td>
+                <td>
+                    @user.Surname
+                </td>
+            </tr>
+            }
+</table>
+
+
+
+@*First case with ViewBag*@
+@*<h1>@ViewBag.Text</h1>*@
+
+
+@*Second case with ViewBag*@
+@*@foreach (var user in users)
+{
+    <h1>@user.Name</h1>
+}*@
+

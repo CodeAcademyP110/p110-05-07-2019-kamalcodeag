@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Property>
+
+@foreach (var property in Model)
+{
+    <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
+        <a href="/properties/details/@property.Id">
+            @if (property.PropertyPhotos != null && property.PropertyPhotos.Count > 0)
+            {
+                <img src="img/@property.PropertyPhotos.First().Image" alt="Image placeholder" class="img-fluid rounded">
+            }
+        </a>
+        <h3><a href="property-single.html">$@property.Price</a></h3>
+        <div class="reviews-star float-left">
+            @property.Address
+        </div>
+    </div>
+}
