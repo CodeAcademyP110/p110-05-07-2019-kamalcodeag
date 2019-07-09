@@ -1,17 +1,35 @@
-﻿@model  HousePhoto
+﻿@model  House
 
 
 @{
     ViewData["Title"] = "Details";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-6">
-            <img src="~/img/@Model.Image" />
-        </div>
-        <div class="col-6">
-            <img src="~/img/@Model.Image" />
+
+<div class="container-fluid">
+    <div class="row mb-5">
+        <div class="col-12 d-flex justify-content-center">
+            <img src="~/img/@Model.HousePhotos.FirstOrDefault().Image" class="w-75"/>
         </div>
     </div>
-</div>
+    <div class="container">
+        <div class="row mb-3">
+            @foreach (var photo in Model.HousePhotos)
+            {
+                <div class="col-6">
+                    <img src="~/img/@photo.Image" />
+                </div>
+            }
+        </div>
+        <div class="row">
+            <div class="row">
+                <div class="col-12">
+                    <p>
+                        @Model.Description
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+

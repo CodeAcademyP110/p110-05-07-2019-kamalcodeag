@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Practice2.Models;
 using Practice2.MyEF;
 
@@ -17,8 +18,8 @@ namespace Practice2.Controllers
         }
         public IActionResult Details(int id)
         {
-            HousePhoto housePhoto = efdb.HousePhotos.Where(hp => hp.Id == id).FirstOrDefault();
-            return View(housePhoto);
+            House house = efdb.Houses.Include(h => h.HousePhotos).FirstOrDefault(h => h.Id == id);
+            return View(house);
         }
     }
 }
