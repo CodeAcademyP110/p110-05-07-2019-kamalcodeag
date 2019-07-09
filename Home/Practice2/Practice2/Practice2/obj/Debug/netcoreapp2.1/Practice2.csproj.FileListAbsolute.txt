@@ -25,3 +25,4 @@ D:\Programming\Other\ASP.NET\05.07.2019(Partial view,AJAX)\Home\Practice2\Practi
 D:\Programming\Other\ASP.NET\05.07.2019(Partial view,AJAX)\Home\Practice2\Practice2\Practice2\obj\Debug\netcoreapp2.1\Practice2.pdb
 D:\Programming\Other\ASP.NET\05.07.2019(Partial view,AJAX)\Home\Practice2\Practice2\Practice2\obj\Debug\netcoreapp2.1\Practice2.csproj.CopyComplete
 D:\Programming\Other\ASP.NET\05.07.2019(Partial view,AJAX)\Home\Practice2\Practice2\Practice2\obj\Debug\netcoreapp2.1\Razor\Views\Properties\Details.g.cshtml.cs
+D:\Programming\Other\ASP.NET\05.07.2019(Partial view,AJAX)\Home\Practice2\Practice2\Practice2\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_LoadMorePartial.g.cshtml.cs

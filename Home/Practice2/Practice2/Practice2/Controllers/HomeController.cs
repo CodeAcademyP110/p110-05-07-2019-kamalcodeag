@@ -19,7 +19,14 @@ namespace Practice2.Controllers
         }
         public IActionResult Index()
         {
-            return View(efdb.Houses.Include(h => h.HousePhotos));
+            return View(efdb.Houses.Include(h => h.HousePhotos).OrderByDescending(h => h.Id).Take(4));
+        }
+
+        public IActionResult LoadMore()
+        {
+            //return Content("Loaded");
+            return PartialView("_LoadMorePartial", efdb.Houses.Include(h => h.HousePhotos).OrderByDescending(h => h.Id).Take(4));
+
         }
     }
 }

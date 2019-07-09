@@ -19,7 +19,7 @@ using Practice2.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8735a7aa737b074201b0ae276ba2cdd06e703b7a", @"/Views/Properties/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"378488019a7de722d602b600c703cba0352af17d", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3c02457f1feae416e1c35759d1a658a051307ffb", @"/Views/_ViewImports.cshtml")]
     public class Views_Properties_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<House>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("w-75"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -58,7 +58,7 @@ using Practice2.Models;
             WriteLiteral("\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"row mb-5\">\r\n        <div class=\"col-12 d-flex justify-content-center\">\r\n            ");
             EndContext();
             BeginContext(197, 73, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "9433a7f795974ebcab8cb0c5932faef7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "74fb3264b39e4e618f07dba639cd90b2", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -93,7 +93,7 @@ AddHtmlAttributeValue("", 213, Model.HousePhotos.FirstOrDefault().Image, 213, 41
             WriteLiteral("                <div class=\"col-6\">\r\n                    ");
             EndContext();
             BeginContext(488, 32, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d350ff53a6da40708f6b7579e793bf24", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3721c8a88663437c81273ce259f06660", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

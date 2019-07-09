@@ -173,5 +173,18 @@
   smoothScroll();
 
 
+    $("#btn-load-more").click(function ()
+    {
+        $.ajax(
+        {
+            url: "/home/loadmore",
+            type: "GET",
+            success: function (result)
+            {
+                $(".photo-holder").append(result);
+            }
+        });
+    });
+
 
 })(jQuery);

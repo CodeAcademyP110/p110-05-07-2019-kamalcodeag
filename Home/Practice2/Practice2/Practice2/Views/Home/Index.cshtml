@@ -21,8 +21,8 @@
                 <h2 class="heading" data-aos="fade-up">Popular Properties</h2>
             </div>
         </div>
-        <div class="row">
-            @foreach (var h in Model)
+        <div class="row photo-holder">
+            @*@foreach (var h in Model)
             {
                 <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
                     <a href="/properties/details/@h.Id"><img src="~/img/@h.HousePhotos.FirstOrDefault().Image" alt="Image placeholder" class="img-fluid rounded"> </a>
@@ -31,59 +31,14 @@
                         @h.Adress
                     </div>
                 </div>
-            }
+            }*@
 
-
-            @*<div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="property-single.html"><img src="img/img_2.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$1,650</a></h3>
-                <div class="reviews-star float-left">
-                    2724 20th Ave N, Houston TX
-                </div>
+            <partial name="_LoadMorePartial" model="Model" />
+        </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <button id="btn-load-more" class="btn btn-outline-primary">Load more</button>
             </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="200">
-                <a href="property-single.html"><img src="img/img_3.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$3,200</a></h3>
-                <div class="reviews-star float-left">
-                    16321 Lone Corral Ct, Houston TX
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="300">
-                <a href="property-single.html"><img src="img/img_4.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$1,200</a></h3>
-                <div class="reviews-star float-left">
-                    4029 26th Ave S, Houston TX
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
-                <a href="property-single.html"><img src="img/img_1.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$3,450</a></h3>
-                <div class="reviews-star float-left">
-                    46 Brookflower Rd, Houston TX
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="100">
-                <a href="property-single.html"><img src="img/img_2.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$1,650</a></h3>
-                <div class="reviews-star float-left">
-                    2724 20th Ave N, Houston TX
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="200">
-                <a href="property-single.html"><img src="img/img_3.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$3,200</a></h3>
-                <div class="reviews-star float-left">
-                    16321 Lone Corral Ct, Houston TX
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up" data-aos-delay="300">
-                <a href="property-single.html"><img src="img/img_4.jpg" alt="Image placeholder" class="img-fluid rounded"> </a>
-                <h3><a href="property-single.html">$1,200</a></h3>
-                <div class="reviews-star float-left">
-                    4029 26th Ave S, Houston TX
-                </div>
-            </div>*@
-
         </div>
     </div>
 </section>

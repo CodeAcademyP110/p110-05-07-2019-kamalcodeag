@@ -1,0 +1,12 @@
+﻿@model  IEnumerable<House>
+
+@foreach (var h in Model)
+{
+    <div class="col-lg-3 col-md-6 visit mb-3" data-aos="fade-up">
+        <a href="/properties/details/@h.Id"><img src="~/img/@h.HousePhotos.FirstOrDefault().Image" alt="Image placeholder" class="img-fluid rounded"> </a>
+        <h3><a href="property-single.html">$@h.Price</a></h3>
+        <div class="reviews-star float-left">
+            @h.Adress
+        </div>
+    </div>
+}
